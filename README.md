@@ -1,2 +1,2 @@
 # blog-symfony
-Blog réalisé en PHP avec  Symfony4 
+Blog test réalisé à partir d'un tutoriel. Codé en PHP, avec le framework Symfony4 
