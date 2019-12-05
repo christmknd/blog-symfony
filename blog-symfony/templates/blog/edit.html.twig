@@ -1,4 +1,5 @@
 {# templates/blog/edit.html.twig #}
+
 {% extends "base.html.twig" %}
 
 {% block title %}Modifier{% endblock %}
@@ -7,9 +8,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m12 l12">
-				<h4>Modifier l'article {{ slug }}</h4>
+				<h4>Modifier l'article {{ article.title }}</h4>
+                {% if article.picture is not null %}
+                    <img width="300" src="{{ asset('uploads/' ~ article.picture) }}">
+                {% endif %}
 			</div>
-			{% include "includes/article_form.html.twig" %}
 		</div>
-		
+		{% include "includes/article_form.html.twig" %}
+	</div>
 {% endblock %}
