@@ -20,6 +20,11 @@ class Category
      * @ORM\Column(type="string", length=255)
      */
     private $label;
+    
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Article", mappedBy="categories")
+     */
+    private $articles;
 
     public function getId(): ?int
     {
