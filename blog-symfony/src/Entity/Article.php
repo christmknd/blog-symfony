@@ -49,7 +49,7 @@ class Article
     private $isPublished;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Category")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Category",inversedBy="articles")
      */
     private $categories;
 
