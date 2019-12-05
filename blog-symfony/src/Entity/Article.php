@@ -25,7 +25,7 @@ class Article
     private $picture;
 
     /**
-     * @Assert\NotBlank
+     * @Assert\NotBlank(message="Ce champ ne peut pas etre vide.")
      * @ORM\Column(type="string", length=255)
      */
     private $title;
